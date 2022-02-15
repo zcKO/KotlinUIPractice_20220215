@@ -12,11 +12,13 @@
         android:text="메세지 입력" />
 
     <EditText
+        android:id="@+id/edtMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="자유롭게 입력하세요." />
 
     <Button
+        android:id="@+id/btnOk"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="확인" />
