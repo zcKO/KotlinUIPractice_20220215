@@ -36,19 +36,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:text="숫자 입력" />
+        android:text="출생년도 입력" />
 
     <EditText
         android:id="@+id/edtNumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="정수 하나를 입력하세요."
+        android:hint="태어난 년도를 입력하세요. (ex. 1988)"
         android:inputType="number" />
 
     <Button
         android:id="@+id/btnCalculate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="입력한 숫자는, 홀? 짝?" />
+        android:text="2022년 현재, 당신의 나이는?" />
 
 </LinearLayout>

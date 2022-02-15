@@ -25,15 +25,15 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnCalculate.setOnClickListener {
-//            입력한 숫자 추출.
-            val inputNumber = edtNumber.text.toString().toInt()    // 입력한 문구 추출 > String 으로 > Int 로 변환
 
-//            숫자가 짝수인가? => 조건문 if 문 활용
-            if (inputNumber % 2 == 0) {
-                Toast.makeText(this, "입력한 숫자는 짝수 입니다.", Toast.LENGTH_SHORT).show()
-            } else {
-                Toast.makeText(this, "입력한 숫자는 홀수 입니다.", Toast.LENGTH_SHORT).show()
-            }
+            val inputBirthYear = edtNumber.text.toString().toInt()
+
+//            2022년 나이를 계산.
+            val age = 2022 - inputBirthYear + 1
+
+//            Toast 는 Int 타입이 들어가면 에러가 날 수 있다.
+//            이 사람은 올해 35세 입니다. => 숫자를 이용한 문장 가공
+            Toast.makeText(this, "이 사람은 올해 ${age}세 입니다.", Toast.LENGTH_SHORT).show()
 
         }
 
